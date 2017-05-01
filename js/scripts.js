@@ -4,7 +4,7 @@ $(document).ready(function() {
     favThings.forEach(function(favThing) {
       var userInput = $("input#" + favThing).val();
       $("." + favThing).text(userInput);
-
+      $(".list").append("<li>" + userInput + "</li>")
     });
     var practice = [
       $("input#iceCream").val(),
